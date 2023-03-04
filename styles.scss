@@ -1,0 +1,202 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 24%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $VeryDarkBlue;
+  font-family: 'Overpass', sans-serif;
+  font-size: 0.9375rem;
+}
+
+// how did we do section
+
+.container-how {
+    display: block;
+    padding: 2em;
+    background-color: $DarkBlue;
+    border-radius: 1.5em;
+    width: 28em;
+}
+
+.star-image, .numbers-container > button {
+  background-color: $MediumGrey;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.text{
+  margin-bottom: 1em;
+  h1{
+    color: $white;
+    margin-bottom: .5em;
+    font-weight: 700;
+  }
+
+  p {
+    color: $lightGrey;
+    font-weight: 400;
+  }
+}
+
+
+.numbers-container{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5em;
+  margin-bottom: .5em;
+
+    button{
+      background-color: $MediumGrey;
+      border: none;
+      color: $lightGrey;
+    }
+}
+
+.numbers-container button:hover {
+  background-color: $orange;
+  color: $white;
+  cursor: pointer;
+  border: none;
+}
+
+.active {
+  background-color: $orange;
+  color: $white;
+}
+
+.submit{
+  button {
+    width: 100%;
+    border-radius: 2em;
+    background-color: $orange;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding: .5em 1em;
+    border: none;
+  }
+}
+
+.submit button:hover {
+  background-color: $white;
+  color: $orange;
+  cursor: pointer;
+}
+
+
+
+// thank you section
+
+.thankyou-container{
+  padding: 2em;
+  background-color: $DarkBlue;
+  border-radius: 1.5em;
+  width: 28em;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen__thankyou{
+   
+    img {
+      width: 10em;
+    }
+
+    p {
+      background-color: $MediumGrey;
+      border-radius: 2em;
+      padding: .4em 1em .1em 1em;
+      color: $orange;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+}
+
+.thankyou__text {
+  text-align: center;
+
+  h1 {
+    color: $white;
+    font-weight: 700;
+  }
+  p{
+    color: $lightGrey;
+    font-weight: 400;
+  }
+}
+
+.getback_button {
+    button {
+      margin-top: 1em;
+      border-radius: 2em;
+      background-color: $orange;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      padding: .5em 1em;
+      border: none;
+    }
+}
+
+.getback_button button:hover {
+    background-color: $white;
+    color: $orange;
+    cursor: pointer;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  color: $white;
+
+  a {
+    color: $orange;
+  }
+}
+
+
+
+
+
+
